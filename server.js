@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const Person = require('./models/Person');
-// hi guys
+
 
 app.get('/',(req,res)=>{
     res.send("Welcome to our hotel...");
