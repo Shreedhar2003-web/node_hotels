@@ -1,20 +1,26 @@
 # Node Hotels - CRUD REST API
 
-A simple Node.js REST API for managing hotel data with full CRUD operations,built using Express.js and MongoDB Atlas, and deployed on Render.
+The Node CRUD application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons and students. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and students.
 
-## Live API
-Link -> https://hotels-a6ux.onrender.com
+# Endpoints
+Persons
+Add a Person:
 
-## Tech Stack
-- Node.js
-- Express.js
-- MongoDB Atlas
-- Mongoose
-- Render
+Endpoint: POST /person
+Description: Adds a person to the system with details such as name, role, etc.
+Get All Persons:
 
-## Features
-- Create hotel records
-- Read hotel details
-- Update hotel information
-- Delete hotel records
-- RESTful API structure
+Endpoint: GET /person
+Description: Retrieves a list of all persons in the system.
+Get Persons by Work Type:
+
+Endpoint: GET /person/:workType
+Description: Retrieves a list of persons based on their work type (e.g., chef, waiter, manager).
+Update a Person:
+
+Endpoint: PUT /person/:id
+Description: Updates the details of a specific person identified by their ID.
+Delete a Person:
+
+Endpoint: DELETE /person/:id
+Description: Deletes a person from the system based on their ID.
