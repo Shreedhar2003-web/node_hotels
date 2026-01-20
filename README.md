@@ -2,25 +2,57 @@
 
 The Node CRUD application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons and students. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and students.
 
-# Endpoints
-# Persons
-#  Add a Person:
+## Endpoints
 
-Endpoint: POST /person
-Description: Adds a person to the system with details such as name, role, etc.
-Get All Persons:
+### Persons
+- **Add a Person:**
+  - Endpoint: `POST /person`
+  - Description: Adds a person to the system with details such as name, role, etc.
 
-Endpoint: GET /person
-Description: Retrieves a list of all persons in the system.
-Get Persons by Work Type:
+- **Get All Persons:**
+  - Endpoint: `GET /person`
+  - Description: Retrieves a list of all persons in the system.
 
-Endpoint: GET /person/:workType
-Description: Retrieves a list of persons based on their work type (e.g., chef, waiter, manager).
-Update a Person:
+- **Get Persons by Work Type:**
+  - Endpoint: `GET /person/:workType`
+  - Description: Retrieves a list of persons based on their work type (e.g., chef, waiter, manager).
 
-Endpoint: PUT /person/:id
-Description: Updates the details of a specific person identified by their ID.
-Delete a Person:
+- **Update a Person:**
+  - Endpoint: `PUT /person/:id`
+  - Description: Updates the details of a specific person identified by their ID.
 
-Endpoint: DELETE /person/:id
-Description: Deletes a person from the system based on their ID.
+- **Delete a Person:**
+  - Endpoint: `DELETE /person/:id`
+  - Description: Deletes a person from the system based on their ID.
+
+## Data Models
+
+### Person
+The `Person` data model represents information about staff members in the hotel.
+
+- **Fields:**
+  - `name`: String (Person's name)
+  - `age`: Number (Person's age)
+  - `work`: Enum (Role in the hotel, such as chef, waiter, manager)
+  - `mobile`: String (Person's mobile number)
+  - `email`: String (Person's email address, unique)
+  - `address`: String (Person's address)
+  - `salary`: Number (Person's salary)
+
+- **Example:**
+  ```json
+  {
+    "name": "John Doe",
+    "age": 30,
+    "work": "waiter",
+    "mobile": "123-456-7890",
+    "email": "john@example.com",
+    "address": "123 Main Street",
+    "salary": 30000
+  }
+  
+## Usage
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
