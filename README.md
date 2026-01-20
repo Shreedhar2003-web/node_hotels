@@ -3,8 +3,8 @@
 The Node CRUD application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons and students. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and students.
 
 # Endpoints
-Persons
-Add a Person:
+# Persons
+#  Add a Person:
 
 Endpoint: POST /person
 Description: Adds a person to the system with details such as name, role, etc.
